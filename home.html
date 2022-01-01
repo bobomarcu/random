@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder Random Pick-Up Line</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="fade">
+    <div class="headline">
+       
+        
+    </div>
+    <img src="tinder.png" width="500px">
+    <p>30 pick-up lines for Tinder</p>
+    
+    <div class="namediv">
+        <input class="name" id="nam" placeholder="Enter your name">
+    </div>
+    
+    <button type="button"  onclick="lmao()" class="select">Go!</button>
+    </div>
+    <div class="result" id="res" style="display: none;">
+        <ol><h2>Hello, <b id=nume></b>, here you have 5 best pick lines for Tinder:</h2>   
+            <br>
+            <li id="rasp1" style=" font-style: italic;"><i></i></li>
+            <br>
+            <li id="rasp2" style=" font-style: italic;"><i></i></li>
+            <br>
+            <li id="rasp3" style=" font-style: italic;"><i></i></li>
+            <br>
+            <li id="rasp4" style=" font-style: italic;"><i></i></li>
+            <br>
+            <li id="rasp5" style=" font-style: italic;"><i></i></li>
+            <br>
+        </ol>
+        <button type="reset" id="reset">Reset!</button>
+       
+    </div>
+   
+    <div class="lmao"  >
+        lalallalalala
+        lmao
+    </div>
+
+    <script>
+        $(window).scroll(function(){
+        $(".fade").css("opacity", 1 - $(window).scrollTop() / 250);
+        });
+      
+    </script>
+    <script>
+        function lmao(){
+            $("#res").fadeIn(800);
+            
+
+           
+            document.getElementById("nume").innerHTML = document.getElementById("nam").value;
+
+            var pos1 = "My favorite pick up line is: (insert ridiculous pick up line here, maybe the one about did it hurt when you fell off the Christmas tree). What’s yours?";
+            var pos2 = "Hey, I’m writing an article on the finer things in life and I was hoping I could interview you.";
+            var pos3 = "(Lime emoji) This is my pick up lime. How are you?";
+            var pos4 = "Do you want to hear a joke about ghosts? (Yes.). That’s the spirit!";
+            var pos5 = "You’re seriously cute, but here’s the dealbreaker: do you, or do you not like raisins? (Whether they say yes, or no, you offer them a date instead!)";
+            var pos6 = "I usually go for 8’s but I guess I’ll settle for a 10.";
+            var pos7 = "Roses are red, violets are blue, Yoda I am, and go out with me will you?";
+            var pos8 = "Are you French? Because Eiffel for you.";
+            var pos9 = "Hey, I need some directions and it looks like you know how to get to pretty city.";
+            var pos10 = "I see you’re serving a life sentence for being sexy, but that’s OK, I like a bad girl/boy.";
+            var pos11= "I’m researching important dates in history, do you want to be mine?";
+            var pos12= "Do you like bagels? Because you’re bae goals.";
+            var pos13= "Do you ever just lie down at night, look up at the stars and think about all the messed up things in the world? Like why is there a “D” in “fridge” but no “D” in “refrigerator”?";
+            var pos14= "If you were a fruit, you’d be a fineapple.";
+            var pos15= "So I’ve been trying to come up with a good psychology pickup line for you, but I’m aFreud I couldn’t come up with anything.";
+            var pos16= "Guess what my clothes are made of? Oh, cotton mostly.";
+            var pos17= "Are you from space? Because you’re out of this world good-looking.";
+            var pos18= "Are you http? Because without you I’m just ://";
+            var pos19= "What do you call a string of people lifting a mozzarella cheese? A cheesy pick up line.";
+            var pos20= "Do you ever wear fishnets? Because you’re a real catch.";
+            var pos21= "Do you play soccer? You look like a keeper.";
+            var pos22= "Do you know what I have in common with the Little Mermaid? We both want to be part of your world.";
+            var pos23= "I thought happiness started with an “h,” but I guess it actually starts with “u.”";
+            var pos24= "Are you a gardener? I like your tulips.";
+            var pos25= "Are your parents bakers? They sure made a cutie pie.";
+            var pos26= "Do you have an Instagram? My mom always told me to follow my dreams.";
+            var pos27= "I bet I know when your birthday is. October 10. Because you’re a 10/10.";
+            var pos28= "Is your Bluetooth enabled? I feel like we could pair.";
+            var pos29= "What was the last song/movie/TV show you listened to and loved?";
+            var pos30= "Ready for a gif war? This is my favorite gif of all time: gif (we recommend sassy llama). Can you beat it?";
+
+            var items = [pos1,pos2,pos3,pos4,pos5,pos6,pos7,pos8,pos9,pos10,pos11,pos12,pos13,pos14,pos15,pos16,pos17,pos18,pos19,pos20,pos21,pos22,pos23,pos24,pos25,pos26,pos27,pos28,pos29,pos30];
+            var item1 = items[Math.floor(Math.random() * items.length)];
+            console.log(item1);
+            var item2 = items[Math.floor(Math.random() * items.length)];
+            console.log(item2);
+            var item3 = items[Math.floor(Math.random() * items.length)];
+            console.log(item3);
+            var item4 = items[Math.floor(Math.random() * items.length)];
+            console.log(item4);
+            var item5 = items[Math.floor(Math.random() * items.length)];
+            console.log(item5);
+
+            document.getElementById("rasp1").innerHTML = item1.toString();
+            document.getElementById("rasp2").innerHTML = item2.toString();
+            document.getElementById("rasp3").innerHTML = item3.toString();
+            document.getElementById("rasp4").innerHTML = item4.toString();
+            document.getElementById("rasp5").innerHTML = item5.toString();
+            
+
+
+        }
+    </script>
+</body>
+</html>
